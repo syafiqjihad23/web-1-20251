@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Member Registration Form</title>
+    <style>
+        body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 380px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: none;
+      height: 70px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .row input {
+      flex: 1;
+    }
+
+    .membership-type,
+    .interests {
+      margin-top: 10px;
+    }
+
+    .membership-type label,
+    .interests label {
+      font-weight: normal;
+      margin-right: 10px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 6px;
+    }
+
+    .terms {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .terms input {
+      margin-right: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Membership Registration Form</h2>
+    <p>Please fill out the form below to become a member.</p>
+  
+    <form>
+      <div class="row">
+        <div>
+          <label>First Name</label>
+          <input type="text" name="firstName" placeholder="Enter your first name">
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" name="lastName" placeholder="Enter your last name">
+        </div>
+      </div>
+
+      <label>Email Address</label>
+      <input type="email" name="email" placeholder="Enter your email address">
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" placeholder="Enter your phone number">
+
+      <label>Address Line 1</label>
+      <input type="text" name="address1" placeholder="Enter your address line 1">
+
+      <label>Address Line 2</label>
+      <input type="text" name="address2" placeholder="Enter your address line 2">
+
+      <label>Country</label>
+      <select name="country">
+        <option>United States of America</option>
+        <option>Canada</option>
+        <option>United Kingdom</option>
+        <option>Australia</option>
+      </select>
+
+      <div class="section-title">Membership Type</div>
+      <div class="checkbox-group">
+        <label><input type="radio" name="membership" value="basic"> Basic</label>
+        <label><input type="radio" name="membership" value="premium"> Premium</label>
+        <label><input type="radio" name="membership" value="elite"> Elite</label>
+      </div>
+
+      <div class="section-title">Interests</div>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="sports" value="football"> Football</label>
+        <label><input type="checkbox" name="sports" value="basketball"> Basketball</label>
+        <label><input type="checkbox" name="sports" value="baseball"> Baseball</label>
+        <label><input type="checkbox" name="sports" value="soccer"> Soccer</label>
+        <label><input type="checkbox" name="sports" value="other"> Other</label>
+      </div>
+
+      <label>Why do you want to become a member?</label>
+      <textarea name="reason" placeholder="Please tell us why you want to join"></textarea>
+
+      <div class="terms">
+        <input type="checkbox" name="agree">
+        <label>I agree to the terms and conditions.</label>
+      </div>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+</body>
+
+</html>

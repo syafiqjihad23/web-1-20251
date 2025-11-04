@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Registration Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .form-container {
+            max-width: 400px;
+            background: white;
+            padding: 20px 30px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: #555;
+            font-size: 14px;
+        }
+        .row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .row input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        select, textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        small {
+            color: #777;
+            font-size: 12px;
+        }
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Class Registration Form</h2>
+        <p>Please fill out the form below to register for our class</p>
+
+        <form action="#" method="post">
+            
+            <div class="row">
+                <input type="text" name="firstname" placeholder="First Name" required>
+                <input type="text" name="lastname" placeholder="Last Name" required>
+            </div>
+
+            
+            <div class="row">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            
+            <label for="class_level">Class Level</label>
+            <select id="class_level" name="class_level" required>
+                <option value="">Select your class level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <small>Please choose the appropriate level for your experience</small>
+
+            
+            <label><strong>Class Days</strong></label>
+            <small>Please select the days you are available to attend class</small>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="days" value="monday"> Monday</label>
+                <label><input type="checkbox" name="days" value="tuesday"> Tuesday</label>
+                <label><input type="checkbox" name="days" value="wednesday"> Wednesday</label>
+                <label><input type="checkbox" name="days" value="thursday"> Thursday</label>
+                <label><input type="checkbox" name="days" value="friday"> Friday</label>
+                <label><input type="checkbox" name="days" value="saturday"> Saturday</label>
+            </div>
+
+            
+            <label>
+                <input type="checkbox" name="agree" required>
+                I agree to the terms and conditions of the class registration
+            </label>
+
+            <br><br>
+            <button type="submit">Register Now!</button>
+        </form>
+    </div>
+</body>
+</html>

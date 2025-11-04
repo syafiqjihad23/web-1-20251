@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style> body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 380px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: none;
+      height: 70px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .row input,
+    .row select {
+      flex: 1;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 6px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    .terms {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .terms input {
+      margin-right: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #000;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #333;
+    }</style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Order Form</h2>
+    <form>
+      <label>Name</label>
+      <input type="text" name="name" placeholder="John Doe">
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="john.doe@example.com">
+
+      <label>Phone</label>
+      <input type="tel" name="phone" placeholder="+1 (555) 123-4567">
+      <div class="section-title">Order Details</div>
+
+      <label>Product</label>
+      <select name="product">
+        <option>Select a product</option>
+        <option>Product A</option>
+        <option>Product B</option>
+        <option>Product C</option>
+      </select>
+
+      <label>Quantity</label>
+      <input type="number" name="quantity" value="1" min="1">
+      <div class="section-title">Size</div>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="size" value="small"> Small</label>
+        <label><input type="checkbox" name="size" value="medium"> Medium</label>
+        <label><input type="checkbox" name="size" value="large"> Large</label>
+        <label><input type="checkbox" name="size" value="xl"> XL</label>
+      </div>
+
+      <div class="section-title">Color</div>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="color" value="red"> Red</label>
+        <label><input type="checkbox" name="color" value="blue"> Blue</label>
+        <label><input type="checkbox" name="color" value="green"> Green</label>
+        <label><input type="checkbox" name="color" value="black"> Black</label>
+      </div>
+
+      
+      <label>Additional Comments</label>
+      <textarea name="comments" placeholder="Enter any additional comments or instructions"></textarea>
+
+      <div class="section-title">Payment Details</div>
+
+      <label>Payment Method</label>
+      <select name="payment">
+        <option>Select a payment method</option>
+        <option>Credit Card</option>
+        <option>PayPal</option>
+        <option>Bank Transfer</option>
+      </select>
+
+      <div class="terms">
+        <input type="checkbox" name="accept">
+        <label>I accept the terms and conditions.</label>
+      </div>
+      
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+</body>
+
+</html>
