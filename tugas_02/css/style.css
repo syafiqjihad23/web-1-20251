@@ -1,0 +1,84 @@
+.biodata-card {
+  background: #1e1e1e;
+  padding: 20px;
+  width: 400px;
+}
+button {
+  min-width: 180px;
+}
+
+.foto {
+  display: block;
+  margin: 10px auto;
+}
+.foto-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+
+.pertanyaan {
+  cursor: pointer;
+}
+
+.jawaban {
+  display: none;
+}
+
+#notif {
+  display: none;
+  padding: 15px;
+  background: red;
+}
+.notif-box {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  z-index: 9999;
+}
+
+.notif-success {
+  background-color: #198754;
+}
+
+.notif-error {
+  background-color: #dc3545;
+}
+
+
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin: auto;
+  transition: 0.5s;
+}
+.slide-wrapper {
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
